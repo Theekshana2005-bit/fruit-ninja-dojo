@@ -1,110 +1,99 @@
 # 🍉 Fruit Ninja Dojo
 
-> **A high-performance, responsive Fruit Ninja arcade game built with React, TypeScript, Vite, Tailwind CSS, and the Web Audio API.**  
-> *Developed by **Theekshana** in collaboration with **Gemini AI**.*
+A high-performance, responsive web-based Fruit Ninja arcade game built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and the **Web Audio API**.
+
+Created by **Theekshana** in collaboration with **Gemini AI**.
 
 ---
 
-## 🌟 Short GitHub Repo Description (Copy & Paste this into GitHub Repo About)
+## 🎮 How to Play & Controls
 
-```text
-A realistic Fruit Ninja arcade game with responsive 1:1 slicing physics, authentic katana & fruit sound effects, Chinese instrumental BGM, 3 game modes, and custom blade styles. Built with React & TypeScript.
-```
-
-**Topics / Tags:**  
-`fruit-ninja`, `react`, `typescript`, `vite`, `tailwind-css`, `web-audio-api`, `canvas-game`, `arcade-game`, `game-development`, `html5-canvas`
+- **Mouse / Trackpad:** Click and drag swiftly across the fruits to slice them with your Katana blade.
+- **Touchscreen / Mobile:** Swipe your finger across flying fruits to slice.
+- **Combos:** Slice 3 or more fruits in a single fluid stroke to earn bonus combo points!
+- **Critical Slices:** Rare critical strikes award +10 bonus points with cinematic blade impact sounds.
 
 ---
 
-## 🎮 Key Features
+## 🕹️ Game Modes
 
-- **⚔️ Ultra-Responsive Katana Slicing:** 1:1 accurate slice tracking on mouse, trackpad, and touch devices with dynamic blade trail particles.
-- **🔊 Realistic Sound Engine:** 
-  - Dynamic aerodynamic katana blade whooshes with speed-reactive pitch modulation.
-  - Multi-variety juicy fruit splats (Watermelon, Citrus, Apple, Melon).
-  - Authentic battlefield bomb explosions and crackling gunpowder fuse sizzle.
-  - Traditional bronze temple gong for Game Over.
-- **🎵 Atmospheric Chinese Instrumental BGM:** High-fidelity Chinese background music (*"Year Of The Dragon"*) balanced at a gentle, comfortable volume level.
-- **🕹️ 3 Engaging Game Modes:**
-  - **Classic:** 3 lives system (`❤️ ❤️ ❤️`). Slicing bombs or dropping fruits deducts 1 life. Life healed every 100 points!
-  - **Zen Mode:** 90 seconds of peaceful, bomb-free slicing bliss.
-  - **Arcade Mode:** 60-second frenzy with Freeze, Frenzy, and 2X Double points special bananas!
-- **🗡️ Custom Blade Collection:** Unlock and wield Classic Steel, Flame, Frost, Rainbow, and Shadow Katana blades.
-- **🔒 Privacy Policy & About Sections:** Fully integrated bilingual (සිංහල & English) dialogs with zero personal data collection.
+### 🍉 Classic Mode
+- **3 Lives System (`❤️ ❤️ ❤️`):** Test your reflexes and survive as long as possible!
+- Slicing a bomb or letting a regular fruit drop costs **1 Life**.
+- Every **100 points** scored automatically restores **+1 Life (`❤️`)**.
+- Game Over triggers only when all 3 lives are lost.
 
----
+### 🍎 Zen Mode
+- **90 Seconds of Pure Slicing Bliss:** Zero bombs and zero strikes.
+- Focus purely on scoring the highest score and executing massive slice combos!
 
-## 🚀 How to Deploy to GitHub Pages (Deploy කරන ආකාරය)
-
-This project is already pre-configured for GitHub Pages:
-- `vite.config.ts` uses relative base paths (`base: './'`).
-- Audio files automatically resolve regardless of your repository URL.
-- Automated GitHub Actions workflow is included at `.github/workflows/deploy.yml`.
-
-### Step 1: Create a GitHub Repository
-1. Log in to [GitHub](https://github.com).
-2. Click **New Repository**.
-3. Name it `fruit-ninja-dojo` (or any name you like).
-4. Set it to **Public** and click **Create repository**.
-
-### Step 2: Push Your Code to GitHub
-Run the following commands in your project terminal:
-```bash
-git init
-git add .
-git commit -m "Initial commit - Fruit Ninja Dojo by Theekshana"
-git branch -M main
-git remote add origin https://github.com/<YOUR-GITHUB-USERNAME>/fruit-ninja-dojo.git
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages
-1. On your GitHub repository page, click **Settings** (top bar).
-2. In the left sidebar, click **Pages**.
-3. Under **Build and deployment** > **Source**, choose **GitHub Actions**.
-
-### Step 4: Play Online!
-Within 1-2 minutes, GitHub Actions will finish building your game.  
-Your game will be live at:
-👉 **`https://<YOUR-GITHUB-USERNAME>.github.io/fruit-ninja-dojo/`**
+### 🍌 Arcade Mode
+- **60-Second Frenzy:** Avoid bomb score penalties while slashing for high scores!
+- Features special bananas:
+  - ❄️ **Freeze Banana:** Slows down time, allowing calculated multi-fruit combos.
+  - ⚡ **Frenzy Banana:** Unleashes a torrential swarm of fruits from both sides.
+  - ⭐ **Double Points:** Doubles all slice points for a limited duration.
 
 ---
 
-## 💻 Local Development Setup
+## 🗡️ Custom Katana Blades
 
-To run the game locally on your computer:
+Customize your slicing style with distinct blade trails and visual effects:
+- **Original Katana:** Sleek, polished steel edge with classic white blade trail.
+- **Flame Blade:** Blazing fiery cuts with flying glowing ember particles.
+- **Frost Blade:** Glacial frost trail with delicate floating snowflakes.
+- **Rainbow Blade:** Prismatic shimmering rainbow particle stream.
+- **Shadow Blade:** Mysterious dark void energy trail.
 
-```bash
-# 1. Install dependencies
-npm install
+---
 
-# 2. Start development server
-npm run dev
-```
+## 🔊 Realistic Sound Engine
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+- **Katana Swooshes:** Velocity-reactive aerodynamic blade whooshes with natural pitch modulation.
+- **Juicy Squelches:** Authentic acoustic slices across watermelons, citrus, apples, and melons.
+- **Battlefield Detonation:** Realistic sub-bass bomb explosions and spark-sizzle fuse audio.
+- **Temple Gong:** Resonant bronze gong for Game Over.
+- **Atmospheric BGM:** Traditional Chinese instrumental background music (*"Year Of The Dragon"*) balanced at a gentle, comfortable volume level.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** React 19 + TypeScript
-- **Bundler:** Vite
+- **Frontend:** React 19, TypeScript
 - **Styling:** Tailwind CSS v4
-- **Graphics:** HTML5 Canvas (High-DPR calibrated)
-- **Audio:** Web Audio API + HTML5 Audio
+- **Graphics:** HTML5 2D Canvas (High-DPR calibrated)
+- **Audio Engine:** Web Audio API + HTML5 Audio
 - **Icons:** Lucide React
+- **Build Tool:** Vite
+
+---
+
+## 💻 Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start local development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## 🔒 Privacy & Safety
+
+Fruit Ninja Dojo values player privacy:
+- **No Personal Data Collected:** Zero collection of names, emails, passwords, or locations.
+- **Offline / Local Storage:** High scores and active blade preferences stay 100% on your device.
+- **No Trackers or Ads:** Completely free of third-party advertising or surveillance scripts.
 
 ---
 
 ## 👤 Author & Credits
 
 - **Developer:** [Theekshana](https://github.com)
-- **AI Assistance:** Built with [Gemini AI](https://deepmind.google/technologies/gemini/)
+- **AI Collaboration:** Built with [Gemini AI](https://deepmind.google/technologies/gemini/)
 - **Background Music:** *"Year Of The Dragon"* by Steve Oxen (Fesliyan Studios)
-
----
-
-## 📄 License
-
-This project is open source and available under the [Apache-2.0 License](LICENSE).
