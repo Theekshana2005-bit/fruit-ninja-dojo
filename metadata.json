@@ -1,0 +1,8 @@
+{
+  "name": "Remix Slice Master Physics",
+  "description": "A high-precision fruit slicing game featuring realistic physics, fluid motion, and addictive arcade-style gameplay mechanics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
